@@ -2,13 +2,10 @@
 {
     public partial class advanced_calculator : Form
     {
-        // Stores the first operand in a two-operand operation
         double firstNumber = 0;
 
-        // Stores the operation symbol, e.g. "+", "-", "*", "/", "x^y", etc.
         string operation = "";
 
-        // Tracks whether the last button pressed was an operation (to control clearing vs appending digits)
         bool operationPressed = false;
         public advanced_calculator()
         {
@@ -26,7 +23,7 @@
 
         private void bt_1_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "1") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -35,7 +32,7 @@
 
         private void bt_2_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "2") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -44,7 +41,7 @@
 
         private void bt_3_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "3") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -53,7 +50,7 @@
 
         private void bt_4_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "4") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -62,7 +59,7 @@
 
         private void bt_5_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "5") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -71,7 +68,7 @@
 
         private void bt_6_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "6") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -80,7 +77,7 @@
 
         private void bt_7_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "7") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -89,7 +86,7 @@
 
         private void bt_8_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "8") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -98,7 +95,7 @@
 
         private void bt_9_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text == "9") || operationPressed)
+            if ((textBox1.Text == "0") || operationPressed)
                 textBox1.Clear();
 
             operationPressed = false;
@@ -158,7 +155,6 @@
                     result = firstNumber * secondNumber;
                     break;
                 case "/":
-                    // Handle division by zero carefully
                     if (secondNumber != 0)
                         result = firstNumber / secondNumber;
                     else
@@ -167,11 +163,9 @@
                 case "x^y":
                     result = Math.Pow(firstNumber, secondNumber);
                     break;
-                    // You can add more operations here if needed
             }
 
             textBox1.Text = result.ToString();
-            // Optionally store the result back to firstNumber
             firstNumber = result;
             operation = "";
         }
@@ -345,6 +339,12 @@
         private void bt_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void bt_exp_Click(object sender, EventArgs e)
+        {
+            double num = double.Parse(textBox1.Text);
+            textBox1.Text = Math.Exp(num).ToString();
         }
     }
 }

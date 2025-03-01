@@ -331,7 +331,7 @@
             // 
             bt_root.FlatStyle = FlatStyle.Flat;
             bt_root.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_root.ForeColor = SystemColors.ButtonHighlight;
+            bt_root.ForeColor = Color.Cyan;
             bt_root.Location = new Point(98, 99);
             bt_root.Name = "bt_root";
             bt_root.Size = new Size(77, 59);
@@ -344,7 +344,7 @@
             // 
             bt_tan.FlatStyle = FlatStyle.Flat;
             bt_tan.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_tan.ForeColor = SystemColors.ButtonHighlight;
+            bt_tan.ForeColor = Color.Cyan;
             bt_tan.Location = new Point(183, 164);
             bt_tan.Name = "bt_tan";
             bt_tan.Size = new Size(77, 59);
@@ -357,7 +357,7 @@
             // 
             bt_1_x.FlatStyle = FlatStyle.Flat;
             bt_1_x.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_1_x.ForeColor = SystemColors.ButtonHighlight;
+            bt_1_x.ForeColor = Color.Cyan;
             bt_1_x.Location = new Point(183, 229);
             bt_1_x.Name = "bt_1_x";
             bt_1_x.Size = new Size(77, 59);
@@ -370,12 +370,12 @@
             // 
             bt_y_x.FlatStyle = FlatStyle.Flat;
             bt_y_x.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_y_x.ForeColor = SystemColors.ButtonHighlight;
+            bt_y_x.ForeColor = Color.Cyan;
             bt_y_x.Location = new Point(183, 294);
             bt_y_x.Name = "bt_y_x";
             bt_y_x.Size = new Size(77, 59);
             bt_y_x.TabIndex = 0;
-            bt_y_x.Text = "y^x";
+            bt_y_x.Text = "yˣ";
             bt_y_x.UseVisualStyleBackColor = true;
             bt_y_x.Click += bt_y_x_Click;
             // 
@@ -383,19 +383,20 @@
             // 
             bt_exp.FlatStyle = FlatStyle.Flat;
             bt_exp.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_exp.ForeColor = SystemColors.ButtonHighlight;
+            bt_exp.ForeColor = Color.Cyan;
             bt_exp.Location = new Point(183, 359);
             bt_exp.Name = "bt_exp";
             bt_exp.Size = new Size(77, 59);
             bt_exp.TabIndex = 0;
             bt_exp.Text = "e";
             bt_exp.UseVisualStyleBackColor = true;
+            bt_exp.Click += bt_exp_Click;
             // 
             // bt_cos
             // 
             bt_cos.FlatStyle = FlatStyle.Flat;
             bt_cos.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_cos.ForeColor = SystemColors.ButtonHighlight;
+            bt_cos.ForeColor = Color.Cyan;
             bt_cos.Location = new Point(98, 164);
             bt_cos.Name = "bt_cos";
             bt_cos.Size = new Size(77, 59);
@@ -408,7 +409,7 @@
             // 
             bt_log.FlatStyle = FlatStyle.Flat;
             bt_log.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_log.ForeColor = SystemColors.ButtonHighlight;
+            bt_log.ForeColor = Color.Cyan;
             bt_log.Location = new Point(98, 229);
             bt_log.Name = "bt_log";
             bt_log.Size = new Size(77, 59);
@@ -421,7 +422,7 @@
             // 
             bt_persent.FlatStyle = FlatStyle.Flat;
             bt_persent.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_persent.ForeColor = SystemColors.ButtonHighlight;
+            bt_persent.ForeColor = Color.Cyan;
             bt_persent.Location = new Point(15, 99);
             bt_persent.Name = "bt_persent";
             bt_persent.Size = new Size(77, 59);
@@ -434,7 +435,7 @@
             // 
             bt_x_squer.FlatStyle = FlatStyle.Flat;
             bt_x_squer.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_x_squer.ForeColor = SystemColors.ButtonHighlight;
+            bt_x_squer.ForeColor = Color.Cyan;
             bt_x_squer.Location = new Point(98, 294);
             bt_x_squer.Name = "bt_x_squer";
             bt_x_squer.Size = new Size(77, 59);
@@ -447,7 +448,7 @@
             // 
             bt_pi.FlatStyle = FlatStyle.Flat;
             bt_pi.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_pi.ForeColor = SystemColors.ButtonHighlight;
+            bt_pi.ForeColor = Color.Cyan;
             bt_pi.Location = new Point(98, 359);
             bt_pi.Name = "bt_pi";
             bt_pi.Size = new Size(77, 59);
@@ -460,7 +461,7 @@
             // 
             bt_ln.FlatStyle = FlatStyle.Flat;
             bt_ln.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_ln.ForeColor = SystemColors.ButtonHighlight;
+            bt_ln.ForeColor = Color.Cyan;
             bt_ln.Location = new Point(15, 229);
             bt_ln.Name = "bt_ln";
             bt_ln.Size = new Size(77, 59);
@@ -473,7 +474,7 @@
             // 
             bt_sin.FlatStyle = FlatStyle.Flat;
             bt_sin.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_sin.ForeColor = SystemColors.ButtonHighlight;
+            bt_sin.ForeColor = Color.Cyan;
             bt_sin.Location = new Point(15, 164);
             bt_sin.Name = "bt_sin";
             bt_sin.Size = new Size(77, 59);
@@ -486,12 +487,12 @@
             // 
             bt_e_x.FlatStyle = FlatStyle.Flat;
             bt_e_x.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_e_x.ForeColor = SystemColors.ButtonHighlight;
+            bt_e_x.ForeColor = Color.Cyan;
             bt_e_x.Location = new Point(15, 294);
             bt_e_x.Name = "bt_e_x";
             bt_e_x.Size = new Size(77, 59);
             bt_e_x.TabIndex = 0;
-            bt_e_x.Text = "e^x";
+            bt_e_x.Text = "eˣ";
             bt_e_x.UseVisualStyleBackColor = true;
             bt_e_x.Click += bt_e_x_Click;
             // 
@@ -499,7 +500,7 @@
             // 
             bt_abs.FlatStyle = FlatStyle.Flat;
             bt_abs.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            bt_abs.ForeColor = SystemColors.ButtonHighlight;
+            bt_abs.ForeColor = Color.Cyan;
             bt_abs.Location = new Point(15, 359);
             bt_abs.Name = "bt_abs";
             bt_abs.Size = new Size(77, 59);
@@ -511,7 +512,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 13F);
-            textBox1.Location = new Point(133, 57);
+            textBox1.Location = new Point(133, 44);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(328, 36);
             textBox1.TabIndex = 1;
